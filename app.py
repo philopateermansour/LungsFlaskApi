@@ -57,3 +57,5 @@ def predict():
     else:
         return jsonify({'predicted_label': predicted_label, 'caption': 'Please upload a chest X-ray image.'})
 
+if __name__ == '__main__':
+    app.run(debug=True,host='127.0.0.1')
